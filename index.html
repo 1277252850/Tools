@@ -1,1 +1,68 @@
-<label>Hello Github</label>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国学书籍</title>
+    <style>
+        html, body {
+            width: 100%;
+            /*height: 100%;*/
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script src="jquery_2.0.0_min.js"></script>
+</head>
+<body>
+
+<div style="background: blanchedalmond">
+    <div style="background: brown; height: 20%; text-align: center;padding-top: 50px;padding-bottom: 20px">
+        <div><span style="font-size: 2.5em; font-weight: bold; color: aliceblue;">国学书籍</span></div>
+        <div style="margin-top: 20px"><span
+                style="font-size: 1em; font-weight: normal; color: aliceblue;">诸恶莫作 众善奉行</span></div>
+    </div>
+    <div id="book_base" style="float: left"></div>
+</div>
+
+
+<script>
+    function generate_book_list(json) {
+        let li_str = '';
+        let sub_list = [];
+        switch (json['type']) {
+            case 'dir':
+                sub_list = json['subs'];
+                for (let sub of sub_list) {
+                    li_str += '<li>' + json['name'] + generate_book_list(sub) + '</li>'
+                }
+                return '<ul>' + li_str + '</ul>';
+            case 'file':
+                sub_list = json['urls'];
+                let i = 0;
+                let tds = '';
+                for (let sub of sub_list) {
+                    i++;
+                    tds += '<td>' + sub + '</td>';
+                    if (i % 3 === 0) {
+                        li_str += '<tr>' + tds + '</tr>';
+                        tds = '';
+                    }
+                }
+                return '<table cellpadding="2" cellspacing="2" style="width: 100%;word-wrap:break-word;table-layout:fixed;">' + li_str + '</table>';
+        }
+    }
+
+    $.get('urls.txt', {}, function (content) {
+        let lines = content.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            if (!lines[i]) continue;
+            let json = eval('(' + lines[i] + ')');
+            $('#book_base').append(generate_book_list(json))
+        }
+    });
+</script>
+</body>
+</html>
