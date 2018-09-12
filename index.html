@@ -118,9 +118,6 @@
     }
 
     function navClick(b) {
-        console.log(b);
-        let id = '"' + b['name'] + '"';
-        console.log(id);
         $("html, body").animate({scrollTop: ($(b['name']).offset().top - screen.height / 7)}, {
             duration: 500,
             easing: "swing"
