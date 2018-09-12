@@ -58,7 +58,8 @@
     <div id="book_base" style="float: right; width: 75%;margin-top: 150px;height: 100%;"></div>
 </div>
 
-<div id="loading" style="height: 100%; text-align: center; z-index:1001;"><img src="loading.gif" alt="加载中"></div>
+<div id="loading" style="height: 100%; text-align: center; z-index:1001; margin-top: 50px"><img src="loading.gif"
+                                                                                                alt="加载中"></div>
 
 
 <script>
@@ -124,18 +125,16 @@
         });
     }
 
-    window.onload = function () {
-        $.get('urls.txt', {}, function (content) {
-            let lines = content.split('\n');
-            for (let i = 0; i < lines.length; i++) {
-                if (!lines[i]) continue;
-                let json = eval('(' + lines[i] + ')');
-                $('#book_base').append('<ul><li id="li_' + num1++ + '">' + json['name'] + generate_book_list(json) + '</li></ul>');
-                $('#book_dir').append('<ul class="list-group"><li class="list-group-item"><a onclick="navClick(this)" name="#li_' + num2++ + '">' + json['name'] + '</a>' + generate_book_dir(json) + '</li></ul>');
-            }
-            document.getElementById("loading").style.display = "none";
-        });
-    }
+    $.get('urls.txt', {}, function (content) {
+        let lines = content.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            if (!lines[i]) continue;
+            let json = eval('(' + lines[i] + ')');
+            $('#book_base').append('<ul><li id="li_' + num1++ + '">' + json['name'] + generate_book_list(json) + '</li></ul>');
+            $('#book_dir').append('<ul class="list-group"><li class="list-group-item"><a onclick="navClick(this)" name="#li_' + num2++ + '">' + json['name'] + '</a>' + generate_book_dir(json) + '</li></ul>');
+        }
+        document.getElementById("loading").style.display = "none";
+    });
 
 
 </script>
