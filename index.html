@@ -125,10 +125,6 @@
         });
     }
 
-    $.get('https://www.baidu.com', {}, content => {
-        console.log(content);
-    });
-
     $.get('urls.txt', {}, function (content) {
         let lines = content.split('\n');
         for (let i = 0; i < lines.length; i++) {
