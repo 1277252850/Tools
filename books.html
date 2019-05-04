@@ -26,10 +26,10 @@
 
 <!-- The drawer is always open in large screens. The header is always shown,
   even in small screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
-            mdl-layout--fixed-header">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title" onclick="window.location.reload()" style="cursor: pointer">国学书籍</span>
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
@@ -44,13 +44,11 @@
             </div>
         </div>
     </header>
+
     <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">国学书籍</span>
-        <nav class="mdl-navigation" id="book_dir">
-            <!--            <a class="mdl-navigation__link" href="">Link</a>-->
-            <!--            <a class="mdl-navigation__link" href="">Link</a>-->
-            <!--            <a class="mdl-navigation__link" href="">Link</a>-->
-            <!--            <a class="mdl-navigation__link" href="">Link</a>-->
+        <span class="mdl-layout-title" onclick="window.location.reload()" style="cursor: pointer">国学书籍</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">皮皮猪导航</a>
         </nav>
     </div>
     <main class="mdl-layout__content">
@@ -160,7 +158,6 @@
             duration: 500,
             easing: "swing"
         });
-
     });
 </script>
 </body>
