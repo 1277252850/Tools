@@ -125,14 +125,6 @@
         });
     }
 
-    // $(document).on("click", 'a', (b) => {
-    //     b = $(this);
-    //     $("html, body").animate({scrollTop: ($(b['name']).offset().top - screen.height / 7)}, {
-    //         duration: 500,
-    //         easing: "swing"
-    //     });
-    // });
-
     $.get('assets/urls.txt', {}, content => {
         let lines = content.split('\n');
         for (let i = 0; i < lines.length; i++) {
