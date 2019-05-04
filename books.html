@@ -139,7 +139,7 @@
             if (!lines[i]) continue;
             let json = eval('(' + lines[i] + ')');
             $('#book_base').append('<ul><li id="li_' + num1++ + '">' + json['name'] + generate_book_list(json) + '</li></ul>');
-            $('#book_dir').append('<ul><li><a onclick="navClick(this)" name="#li_' + num2++ + '">' + json['name'] + '</a>' + generate_book_dir(json) + '</li></ul>');
+            // $('#book_dir').append('<ul><li><a onclick="navClick(this)" name="#li_' + num2++ + '">' + json['name'] + '</a>' + generate_book_dir(json) + '</li></ul>');
         }
         document.getElementById("loading").style.display = "none";
     });
