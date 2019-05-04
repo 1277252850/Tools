@@ -1,142 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>国学书籍</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="jquery_2.0.0_min.js"></script>
-    <script src="bootstrap_3.0.3_min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>皮皮猪导航</title>
+
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <style>
-        html, body {
-            width: 100%;
-            /*height: 100%;*/
-            display: flex;
-            flex-direction: column;
-            overflow: auto;
-            margin: 0 auto;
+        .my_top_padding {
+            padding-top: 16px;
         }
-
-        #loading {
-            height: 100%;
-            text-align: center;
-            z-index: 1001;
-        }
-
-        #book_dir {
-            -ms-overflow-style: none;
-            overflow: -moz-scrollbars-none;
-        }
-
-        #book_dir::-webkit-scrollbar {
-            display: none;
-        }
-
-        #div_top {
-            height: 150px;
-            background: cadetblue;
-            text-align: center;
-            padding-top: 50px;
-            padding-bottom: 20px;
-            position: fixed;
-            width: 100%
-        }
-
     </style>
 </head>
 <body>
 
-<div>
-    <div id="div_top">
-        <div><span style="font-size: 2.5em; font-weight: bold; color: aliceblue;">国学书籍</span></div>
-        <div style="margin-top: 20px">
-            <span style="font-size: 1em; font-weight: normal; color: aliceblue">按 Ctrl+F 进行搜索</span>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <!--            <a href="javascript:window.location.reload()" class="mdl-layout-title">皮皮猪导航</a>-->
+            <!--            <span class="mdl-chip">-->
+            <!--                <span class="mdl-chip__text">皮皮猪导航</span>-->
+            <!--            </span>-->
+            <span class="mdl-layout-title" onclick="window.location.reload()" style="cursor: pointer">皮皮猪导航</span>
+
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--fixed-header">
+                <iframe allowtransparency="true" frameborder="0" width="109" height="36" scrolling="no"
+                        src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=3&t=0&v=0&d=2&bd=0&k=000000&f=ffffff&ltf=009944&htf=ff80c0&q=1&e=1&a=1&c=54511&w=180&h=36&align=center">
+                </iframe>
+                <!--                <a class="mdl-navigation__link" href="">Link</a>-->
+                <!--                <a class="mdl-navigation__link" href="">Link</a>-->
+                <!--                <a class="mdl-navigation__link" href="">Link</a>-->
+                <!--                <a class="mdl-navigation__link" href="">Link</a>-->
+            </nav>
         </div>
-    </div>
-    <div id="book_dir"
-         style="float: left;width: 25%;position: fixed;max-height: 100%;overflow: auto;margin-top: 160px;padding-bottom: 150px"></div>
-    <div id="book_base" style="float: right; width: 75%;margin-top: 170px;height: 100%;"></div>
+    </header>
+    <!--    <div class="mdl-layout__drawer">-->
+    <!--        <span class="mdl-layout-title" onclick="window.location.reload()" style="cursor: pointer">皮皮猪导航</span>-->
+    <!--        <nav class="mdl-navigation">-->
+    <!--            <a class="mdl-navigation__link" href="">Link</a>-->
+    <!--            <a class="mdl-navigation__link" href="">Link</a>-->
+    <!--            <a class="mdl-navigation__link" href="">Link</a>-->
+    <!--            <a class="mdl-navigation__link" href="">Link</a>-->
+    <!--        </nav>-->
+    <!--    </div>-->
+    <main class="mdl-layout__content  mdl-typography--text-center">
+        <div class="page-content my_top_padding">
+            <h3>皮皮猪导航</h3>
+        </div>
+        <div class="page-content my_top_padding">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="input_google_search">
+                <label class="mdl-textfield__label" for="input_google_search"></label>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                    onclick="on_google_search()">
+                谷歌镜像
+            </button>
+        </div>
+
+        <div class="page-content my_top_padding">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="input_baidu_search">
+                <label class="mdl-textfield__label" for="input_baidu_search"></label>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                    onclick="on_baidu_search()">
+                百度搜索
+            </button>
+        </div>
+    </main>
+    <!--    <footer class="mdl-mini-footer">-->
+    <!--        <div class="mdl-mini-footer__left-section">-->
+    <!--            <div class="mdl-logo">Title</div>-->
+    <!--            <ul class="mdl-mini-footer__link-list">-->
+    <!--                <li><a href="#">Help</a></li>-->
+    <!--                <li><a href="#">Privacy & Terms</a></li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+    <!--    </footer>-->
 </div>
 
-<div id="loading" style="height: 100%; text-align: center; z-index:1001; margin-top: 50px"><img src="loading.gif"
-                                                                                                alt="加载中"></div>
+<!-- Accent-colored raised button with ripple -->
 
+
+<script src="js/jquery-3.4.1_min.js"></script>
+<script src="js/material.min.js"></script>
 
 <script>
-    let num1 = 0;
-    let num2 = 0;
-    function generate_book_list(json) {
-        let li_str = '';
-        let sub_list = [];
-        switch (json['type']) {
-            case 'dir':
-                sub_list = json['subs'];
-                for (let sub of sub_list) {
-                    if (sub['type'] === 'dir') {
-                        li_str += '<li id="li_' + num1++ + '">' + sub['name'] + generate_book_list(sub) + '</li>'
-                    } else {
-                        return generate_book_list(sub)
-                    }
-                }
-                return '<ul>' + li_str + '</ul>';
-            case 'file':
-                sub_list = json['urls'];
-                let i = 0;
-                let tds = '';
-                for (let sub of sub_list) {
-                    i++;
-                    tds += '<td>' + sub + '</td>';
-                    if (i % 3 === 0) {
-                        li_str += '<tr>' + tds + '</tr>';
-                        tds = '';
-                    }
-                }
-                if (i % 3 !== 0) {
-                    li_str += '<tr>' + tds + '</tr>';
-                    tds = '';
-                }
-                return '<table class="table table-bordered" cellpadding="2" cellspacing="2" style="width: 100%;word-wrap:break-word;table-layout:fixed;">' + li_str + '</table>';
-        }
-    }
-
-    function generate_book_dir(json) {
-        let li_str = '';
-        let sub_list = [];
-        switch (json['type']) {
-            case 'dir':
-                sub_list = json['subs'];
-                for (let sub of sub_list) {
-                    if (sub['type'] === 'dir') {
-                        li_str += '<li class="list-group-item"><a onclick="navClick(this)" name="#li_' + num2++ + '">' + sub['name'] + '</a>' + generate_book_dir(sub) + '</li>'
-                    } else {
-                        return generate_book_dir(sub)
-                    }
-                }
-                return '<ul class="list-group">' + li_str + '</ul>';
-            case 'file':
-                return '';
-        }
-    }
-
-    function navClick(b) {
-        $("html, body").animate({scrollTop: ($(b['name']).offset().top - screen.height / 7)}, {
-            duration: 500,
-            easing: "swing"
+    // 获取配置文件
+    let config = {};
+    fetch('config.json')
+        .then((response) => {
+            return response.json();
+        })
+        .then((result) => {
+            config = result;
         });
-    }
 
-    $.get('urls.txt', {}, function (content) {
-        let lines = content.split('\n');
-        for (let i = 0; i < lines.length; i++) {
-            if (!lines[i]) continue;
-            let json = eval('(' + lines[i] + ')');
-            $('#book_base').append('<ul><li id="li_' + num1++ + '">' + json['name'] + generate_book_list(json) + '</li></ul>');
-            $('#book_dir').append('<ul class="list-group"><li class="list-group-item"><a onclick="navClick(this)" name="#li_' + num2++ + '">' + json['name'] + '</a>' + generate_book_dir(json) + '</li></ul>');
+    // 绑定 Enter
+    $('input').keypress((e) => {
+        if (e.which === 13) {
+            switch ($(e.target).attr('id')) {
+                case 'input_google_search':
+                    on_google_search();
+                    break;
+                case 'input_baidu_search':
+                    on_baidu_search();
+                    break;
+            }
         }
-        document.getElementById("loading").style.display = "none";
     });
 
+    // 搜索框内容同步
+    $('input').bind("input propertychange", (e) => {
+        let content = $(e.target).val();
+        switch ($(e.target).attr('id')) {
+            case 'input_google_search':
+                $('#input_baidu_search').val(content);
+                break;
+            case 'input_baidu_search':
+                $('#input_google_search').val(content);
+                break;
+        }
+    });
 
+    // 初始化天气控件
+    let skycons = new Skycons({"color": "pink"});
+    skycons.add("icon1", Skycons.PARTLY_CLOUDY_DAY);
+    skycons.play();
+
+    // fetch('http://wthrcdn.etouch.cn/weather_mini')
+    //     .then((response) => {
+    //         console.log(response);
+    //         return response.json();
+    //     })
+    //     .then((result) => {
+    //         console.log(result);
+    //     });
+</script>
+
+<script>
+    function on_google_search() {
+        window.open(config['url_search_google'] + $('#input_google_search').val());
+    }
+
+    function on_baidu_search() {
+        window.open('https://www.baidu.com/s?wd=' + $('#input_baidu_search').val())
+    }
 </script>
 </body>
 </html>
