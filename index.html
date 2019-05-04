@@ -6,7 +6,7 @@
     <title>皮皮猪导航</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125317168-2"></script>
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-125317168-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -29,12 +29,27 @@
     </script>
 
     <link rel="stylesheet" href="css/material.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
 
     <style>
         .my_top_padding {
             padding-top: 16px;
         }
+
+        .my_icon {
+            width: 32px;
+            padding-right: 8px;
+        }
+
+        .my_center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .my_span {
+            width: 68px;
+        }
+
     </style>
 </head>
 <body>
@@ -47,7 +62,7 @@
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--fixed-header">
-                <iframe allowtransparency="true" frameborder="0" width="109" height="36" scrolling="no"
+                <iframe allowtransparency="true" frameborder="0" width="160" height="36" scrolling="no"
                         src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=3&t=0&v=0&d=2&bd=0&k=000000&f=ffffff&ltf=009944&htf=ff80c0&q=1&e=1&a=1&c=54511&w=180&h=36&align=center">
                 </iframe>
                 <!--                <a class="mdl-navigation__link" href="">Link</a>-->
@@ -64,10 +79,10 @@
         </nav>
     </div>
     <main class="mdl-layout__content  mdl-typography--text-center">
-        <div class="page-content my_top_padding">
+        <div class="page-content">
             <h3>皮皮猪导航</h3>
         </div>
-        <div class="page-content my_top_padding">
+        <div class="page-content">
             <div class="mdl-textfield mdl-js-textfield">
                 <input class="mdl-textfield__input" type="text" id="input_google_search" autofocus="autofocus">
                 <label class="mdl-textfield__label" for="input_google_search"></label>
@@ -78,7 +93,7 @@
             </button>
         </div>
 
-        <div class="page-content my_top_padding">
+        <div class="page-content">
             <div class="mdl-textfield mdl-js-textfield">
                 <input class="mdl-textfield__input" type="text" id="input_baidu_search">
                 <label class="mdl-textfield__label" for="input_baidu_search"></label>
@@ -88,6 +103,47 @@
                 百度搜索
             </button>
         </div>
+
+        <div class="mdl-grid my_center">
+            <div class="mdl-cell mdl-cell--2-col mdl-shadow--2dp my_top_padding">
+                <span>普通搜素引擎</span>
+                <ul class="demo-list-icon mdl-list">
+                    <li class="mdl-list__item mdl-typography--text-center">
+                        <a class="mdl-list__item-primary-content my_center" href="//www.google.com/" target="_blank">
+                            <img class="material-icons my_icon" src="//www.google.com/favicon.ico" alt="Google">
+                            <span class="my_span">Google</span>
+                        </a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <a class="mdl-list__item-primary-content my_center" href="//www.baidu.com/" target="_blank">
+                            <img class="material-icons my_icon" src="//www.baidu.com/favicon.ico" alt="百度">
+                            <span class="my_span">百度</span>
+                        </a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <a class="mdl-list__item-primary-content my_center" href="//cn.bing.com/" target="_blank">
+                            <img class="material-icons my_icon" src="//cn.bing.com/favicon.ico" alt="Bing">
+                            <span class="my_span">Bing</span>
+                        </a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <a class="mdl-list__item-primary-content my_center" href="//youcare.world/" target="_blank">
+                            <img class="material-icons my_icon"
+                                 src="//youcare.world/static/images/favicon/favicon-32x32.png" alt="YouCare">
+                            <span class="my_span">YouCare</span>
+                        </a>
+                    </li>
+                    <li class="mdl-list__item">
+                        <a class="mdl-list__item-primary-content my_center" href="//mijisou.com/" target="_blank">
+                            <img class="material-icons my_icon" src="//mijisou.com/favicon.ico" alt="秘迹搜索">
+                            <span class="my_span">秘迹搜索</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
     </main>
     <!--    <footer class="mdl-mini-footer">-->
     <!--        <div class="mdl-mini-footer__left-section">-->
@@ -148,7 +204,7 @@
     }
 
     function on_baidu_search() {
-        window.open('https://www.baidu.com/s?wd=' + $('#input_baidu_search').val())
+        window.open('//www.baidu.com/s?wd=' + $('#input_baidu_search').val())
     }
 </script>
 </body>
