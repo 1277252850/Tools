@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>皮皮猪导航</title>
     <!--    Global site tag (gtag.js) - Google Analytics    -->
-    <script async src="//www.googletagmanager.com/gtag/js?id=UA-125317168-2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125317168-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() {
@@ -15,27 +15,26 @@
         gtag('config', 'UA-125317168-2');
     </script>
     <!--    Google AdSense  -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: "ca-pub-3368498287347766",
             enable_page_level_ads: true
         });
     </script>
-    <!--    Material Design Lite(mdl) 样式    -->
+    <!--    Material Design Lite (mdl) 样式    -->
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <!--    自定义样式   -->
     <link rel="stylesheet" href="css/my_style.css">
 </head>
 <body>
-
+<!--    网页界面    -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <!--    固定header    -->
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title" onclick="window.location.reload()" style="cursor: pointer">皮皮猪导航</span>
-
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation mdl-layout--fixed-header">
@@ -75,85 +74,11 @@
     <!--        </div>-->
     <!--    </footer>-->
 </div>
-
+<!--    Jquery  -->
 <script src="js/jquery-3.4.1_min.js"></script>
+<!--    Material Design Lite (mdl)   -->
 <script src="js/material.min.js"></script>
-
-<script>
-    // 获取配置文件
-    fetch('config.json')
-        .then((response) => {
-            return response.json();
-        })
-        .then((result) => {
-            $("#loading").hide();
-            init_search_area(result);
-            init_site_area(result);
-        });
-
-    // 初始化 搜索区域
-    function init_search_area(config) {
-        for (let i = 0; i < config['searches'].length; i++) {
-            let search_html = `
-                        <div class="page-content">
-                            <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="input_${config['searches'][i]['id']}" ${i === 0 ? 'autofocus="autofocus"' : ''}>
-                                <label class="mdl-textfield__label" for="input_${config['searches'][i]['id']}"></label>
-                            </div>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="button_${config['searches'][i]['id']}">
-                                ${config['searches'][i]['name']}
-                            </button>
-                        </div>`;
-            $("#search_area").append(search_html);
-            // 绑定Button点击事件
-            $(`#button_${config['searches'][i]['id']}`).click(() => {
-                window.open(config['searches'][i]['url'] + $(`#input_${config['searches'][i]['id']}`).val());
-            });
-        }
-        // 搜索框内容同步
-        $('input').bind("input propertychange", (e) => {
-            for (let i = 0; i < config['searches'].length; i++) {
-                if ($(e.target).attr('id') !== `input_${config['searches'][i]['id']}`) {
-                    $(`#input_${config['searches'][i]['id']}`).val($(e.target).val());
-                }
-            }
-        });
-        // 绑定 Enter
-        $('input').keypress((e) => {
-            if (e.which === 13) {
-                for (let i = 0; i < config['searches'].length; i++) {
-                    if ($(e.target).attr('id') === `input_${config['searches'][i]['id']}`) {
-                        window.open(config['searches'][i]['url'] + $(`#input_${config['searches'][i]['id']}`).val());
-                    }
-                }
-            }
-        });
-    }
-
-    // 初始化网址区域
-    function init_site_area(config) {
-        for (let i = 0; i < config['sites'].length; i++) {
-            // 添加网址类别
-            let site_type = `
-                        <div class="mdl-cell mdl-cell--2-col mdl-shadow--2dp my_top_padding">
-                            <span>${config['sites'][i]['type']}</span>
-                            <ul class="demo-list-icon mdl-list" id="ul_${config['sites'][i]['id']}"></ul>
-                        </div>`;
-            $("#site_area").append(site_type);
-            // 添加网址
-            for (let j = 0; j < config['sites'][i]['contents'].length; j++) {
-                let site_html = `
-                    <li class="mdl-list__item">
-                        <a class="mdl-list__item-primary-content my_center" href="${config['sites'][i]['contents'][j]['url']}" target="_blank">
-                            <img class="material-icons my_icon" src="${config['sites'][i]['contents'][j]['icon']}" alt="秘迹搜索">
-                            <span class="my_span">${config['sites'][i]['contents'][j]['name']}</span>
-                        </a>
-                    </li>
-                `;
-                $(`#ul_${config['sites'][i]['id']}`).append(site_html);
-            }
-        }
-    }
-</script>
+<!--    网页逻辑    -->
+<script src="js/my_script.js"></script>
 </body>
 </html>
