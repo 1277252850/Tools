@@ -1,3 +1,47 @@
 {
-  "url_search_google": "//g.moeyui.cn/search?q="
+  "searches": [
+    {
+      "id": "google_search",
+      "name": "谷歌镜像",
+      "url": "https://vip.kuaimen.bid/search?q="
+    },
+    {
+      "id": "baidu_search",
+      "name": "百度搜索",
+      "url": "https://www.baidu.com/s?wd="
+    }
+  ],
+  "sites": [
+    {
+      "id": "common_search_engine",
+      "type": "普通搜搜引擎",
+      "contents": [
+        {
+          "name": "Google",
+          "url": "https://www.google.com/ncr",
+          "icon": "https://www.google.com/favicon.ico"
+        },
+        {
+          "name": "百度",
+          "url": "https://www.baidu.com/",
+          "icon": "https://www.baidu.com/favicon.ico"
+        },
+        {
+          "name": "Bing",
+          "url": "https://cn.bing.com/",
+          "icon": "https://cn.bing.com/favicon.ico"
+        },
+        {
+          "name": "YouCare",
+          "url": "https://youcare.world/",
+          "icon": "https://youcare.world/static/images/favicon/favicon-32x32.png"
+        },
+        {
+          "name": "秘迹搜索",
+          "url": "https://mijisou.com/",
+          "icon": "https://mijisou.com/favicon.ico"
+        }
+      ]
+    }
+  ]
 }

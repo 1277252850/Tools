@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>皮皮猪导航</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--    Global site tag (gtag.js) - Google Analytics    -->
     <script async src="//www.googletagmanager.com/gtag/js?id=UA-125317168-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -18,8 +17,7 @@
 
         gtag('config', 'UA-125317168-2');
     </script>
-
-    <!--  Google AdSense -->
+    <!--    Google AdSense  -->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
@@ -27,34 +25,16 @@
             enable_page_level_ads: true
         });
     </script>
-
+    <!--    Material Design Lite(mdl) 样式    -->
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-
-    <style>
-        .my_top_padding {
-            padding-top: 16px;
-        }
-
-        .my_icon {
-            width: 32px;
-            padding-right: 8px;
-        }
-
-        .my_center {
-            display: flex;
-            justify-content: center;
-        }
-
-        .my_span {
-            width: 68px;
-        }
-
-    </style>
+    <!--    自定义样式   -->
+    <link rel="stylesheet" href="css/my_style.css">
 </head>
 <body>
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <!--    固定header    -->
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title" onclick="window.location.reload()" style="cursor: pointer">皮皮猪导航</span>
@@ -66,84 +46,27 @@
                         src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=3&t=0&v=0&d=2&bd=0&k=000000&f=ffffff&ltf=009944&htf=ff80c0&q=1&e=1&a=1&c=54511&w=180&h=36&align=center">
                 </iframe>
                 <!--                <a class="mdl-navigation__link" href="">Link</a>-->
-                <!--                <a class="mdl-navigation__link" href="">Link</a>-->
-                <!--                <a class="mdl-navigation__link" href="">Link</a>-->
-                <!--                <a class="mdl-navigation__link" href="">Link</a>-->
             </nav>
         </div>
     </header>
+    <!--    更多  -->
     <div class="mdl-layout__drawer">
         <span class="mdl-layout-title" onclick="window.location.reload()" style="cursor: pointer">皮皮猪导航</span>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="books.html">国学书籍</a>
         </nav>
     </div>
+    <!--    正文  -->
     <main class="mdl-layout__content  mdl-typography--text-center">
         <div class="page-content">
             <h3>皮皮猪导航</h3>
         </div>
-        <div class="page-content">
-            <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="input_google_search" autofocus="autofocus">
-                <label class="mdl-textfield__label" for="input_google_search"></label>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                    onclick="on_google_search()">
-                谷歌镜像
-            </button>
-        </div>
-
-        <div class="page-content">
-            <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="input_baidu_search">
-                <label class="mdl-textfield__label" for="input_baidu_search"></label>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                    onclick="on_baidu_search()">
-                百度搜索
-            </button>
-        </div>
-
-        <div class="mdl-grid my_center">
-            <div class="mdl-cell mdl-cell--2-col mdl-shadow--2dp my_top_padding">
-                <span>普通搜素引擎</span>
-                <ul class="demo-list-icon mdl-list">
-                    <li class="mdl-list__item mdl-typography--text-center">
-                        <a class="mdl-list__item-primary-content my_center" href="//www.google.com/" target="_blank">
-                            <img class="material-icons my_icon" src="//www.google.com/favicon.ico" alt="Google">
-                            <span class="my_span">Google</span>
-                        </a>
-                    </li>
-                    <li class="mdl-list__item">
-                        <a class="mdl-list__item-primary-content my_center" href="//www.baidu.com/" target="_blank">
-                            <img class="material-icons my_icon" src="//www.baidu.com/favicon.ico" alt="百度">
-                            <span class="my_span">百度</span>
-                        </a>
-                    </li>
-                    <li class="mdl-list__item">
-                        <a class="mdl-list__item-primary-content my_center" href="//cn.bing.com/" target="_blank">
-                            <img class="material-icons my_icon" src="//cn.bing.com/favicon.ico" alt="Bing">
-                            <span class="my_span">Bing</span>
-                        </a>
-                    </li>
-                    <li class="mdl-list__item">
-                        <a class="mdl-list__item-primary-content my_center" href="//youcare.world/" target="_blank">
-                            <img class="material-icons my_icon"
-                                 src="//youcare.world/static/images/favicon/favicon-32x32.png" alt="YouCare">
-                            <span class="my_span">YouCare</span>
-                        </a>
-                    </li>
-                    <li class="mdl-list__item">
-                        <a class="mdl-list__item-primary-content my_center" href="//mijisou.com/" target="_blank">
-                            <img class="material-icons my_icon" src="//mijisou.com/favicon.ico" alt="秘迹搜索">
-                            <span class="my_span">秘迹搜索</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
+        <!--    加载动画    -->
+        <div class="mdl-spinner mdl-js-spinner is-active my_loading" id="loading"></div>
+        <!--    搜索区域    -->
+        <div class="page-content" id="search_area"></div>
+        <!--    网址区域    -->
+        <div class="mdl-grid my_center" id="site_area"></div>
     </main>
     <!--    <footer class="mdl-mini-footer">-->
     <!--        <div class="mdl-mini-footer__left-section">-->
@@ -161,50 +84,78 @@
 
 <script>
     // 获取配置文件
-    let config = {};
     fetch('config.json')
         .then((response) => {
             return response.json();
         })
         .then((result) => {
-            config = result;
+            $("#loading").hide();
+            init_search_area(result);
+            init_site_area(result);
         });
 
-    // 绑定 Enter
-    $('input').keypress((e) => {
-        if (e.which === 13) {
-            switch ($(e.target).attr('id')) {
-                case 'input_google_search':
-                    on_google_search();
-                    break;
-                case 'input_baidu_search':
-                    on_baidu_search();
-                    break;
+    // 初始化 搜索区域
+    function init_search_area(config) {
+        for (let i = 0; i < config['searches'].length; i++) {
+            let search_html = `
+                        <div class="page-content">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="input_${config['searches'][i]['id']}" ${i === 0 ? 'autofocus="autofocus"' : ''}>
+                                <label class="mdl-textfield__label" for="input_${config['searches'][i]['id']}"></label>
+                            </div>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="button_${config['searches'][i]['id']}">
+                                ${config['searches'][i]['name']}
+                            </button>
+                        </div>`;
+            $("#search_area").append(search_html);
+            // 绑定Button点击事件
+            $(`#button_${config['searches'][i]['id']}`).click(() => {
+                window.open(config['searches'][i]['url'] + $(`#input_${config['searches'][i]['id']}`).val());
+            });
+        }
+        // 搜索框内容同步
+        $('input').bind("input propertychange", (e) => {
+            for (let i = 0; i < config['searches'].length; i++) {
+                if ($(e.target).attr('id') !== `input_${config['searches'][i]['id']}`) {
+                    $(`#input_${config['searches'][i]['id']}`).val($(e.target).val());
+                }
             }
-        }
-    });
-
-    // 搜索框内容同步
-    $('input').bind("input propertychange", (e) => {
-        let content = $(e.target).val();
-        switch ($(e.target).attr('id')) {
-            case 'input_google_search':
-                $('#input_baidu_search').val(content);
-                break;
-            case 'input_baidu_search':
-                $('#input_google_search').val(content);
-                break;
-        }
-    });
-</script>
-
-<script>
-    function on_google_search() {
-        window.open(config['url_search_google'] + $('#input_google_search').val());
+        });
+        // 绑定 Enter
+        $('input').keypress((e) => {
+            if (e.which === 13) {
+                for (let i = 0; i < config['searches'].length; i++) {
+                    if ($(e.target).attr('id') === `input_${config['searches'][i]['id']}`) {
+                        window.open(config['searches'][i]['url'] + $(`#input_${config['searches'][i]['id']}`).val());
+                    }
+                }
+            }
+        });
     }
 
-    function on_baidu_search() {
-        window.open('//www.baidu.com/s?wd=' + $('#input_baidu_search').val())
+    // 初始化网址区域
+    function init_site_area(config) {
+        for (let i = 0; i < config['sites'].length; i++) {
+            // 添加网址类别
+            let site_type = `
+                        <div class="mdl-cell mdl-cell--2-col mdl-shadow--2dp my_top_padding">
+                            <span>${config['sites'][i]['type']}</span>
+                            <ul class="demo-list-icon mdl-list" id="ul_${config['sites'][i]['id']}"></ul>
+                        </div>`;
+            $("#site_area").append(site_type);
+            // 添加网址
+            for (let j = 0; j < config['sites'][i]['contents'].length; j++) {
+                let site_html = `
+                    <li class="mdl-list__item">
+                        <a class="mdl-list__item-primary-content my_center" href="${config['sites'][i]['contents'][j]['url']}" target="_blank">
+                            <img class="material-icons my_icon" src="${config['sites'][i]['contents'][j]['icon']}" alt="秘迹搜索">
+                            <span class="my_span">${config['sites'][i]['contents'][j]['name']}</span>
+                        </a>
+                    </li>
+                `;
+                $(`#ul_${config['sites'][i]['id']}`).append(site_html);
+            }
+        }
     }
 </script>
 </body>

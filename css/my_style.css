@@ -1,0 +1,22 @@
+.my_top_padding {
+    padding-top: 16px;
+}
+
+.my_icon {
+    width: 32px;
+    padding-right: 8px;
+}
+
+.my_center {
+    display: flex;
+    justify-content: center;
+}
+
+.my_span {
+    width: 68px;
+}
+
+.my_loading {
+    width: 64px;
+    height: 64px;
+}
