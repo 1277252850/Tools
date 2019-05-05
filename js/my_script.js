@@ -16,7 +16,6 @@ function init_search_area(config) {
                         <div class="page-content">
                             <div class="mdl-textfield mdl-js-textfield">
                                 <input class="mdl-textfield__input" type="text" id="input_${config['searches'][i]['id']}" ${i === 0 ? 'autofocus="autofocus"' : ''}>
-                                <label class="mdl-textfield__label" for="input_${config['searches'][i]['id']}"></label>
                             </div>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="button_${config['searches'][i]['id']}">
                                 ${config['searches'][i]['name']}
@@ -62,10 +61,11 @@ function init_site_area(config) {
         for (let j = 0; j < config['sites'][i]['contents'].length; j++) {
             let site_html = `
                     <li class="mdl-list__item">
-                        <a class="mdl-list__item-primary-content my_center" href="${config['sites'][i]['contents'][j]['url']}" target="_blank">
+                        <a id="a_${config['sites'][i]['contents'][j]['id']}" class="mdl-list__item-primary-content my_center" href="${config['sites'][i]['contents'][j]['url']}" target="_blank">
                             <img class="material-icons my_icon" src="${config['sites'][i]['contents'][j]['icon']}" alt="秘迹搜索">
                             <span class="my_span">${config['sites'][i]['contents'][j]['name']}</span>
                         </a>
+                        <div class="mdl-tooltip" data-mdl-for="a_${config['sites'][i]['contents'][j]['id']}">${config['sites'][i]['contents'][j]['description']}</div>
                     </li>
                 `;
             $(`#ul_${config['sites'][i]['id']}`).append(site_html);

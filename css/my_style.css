@@ -2,6 +2,10 @@
     padding-top: 16px;
 }
 
+.my_padding_right {
+    padding-right: 32px;
+}
+
 .my_icon {
     width: 32px;
     padding-right: 8px;
@@ -10,6 +14,11 @@
 .my_center {
     display: flex;
     justify-content: center;
+}
+
+.my_right {
+    display: flex;
+    justify-content: right;
 }
 
 .my_span {

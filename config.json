@@ -14,32 +14,42 @@
   "sites": [
     {
       "id": "common_search_engine",
-      "type": "普通搜搜引擎",
+      "type": "普通搜索引擎",
       "contents": [
         {
+          "id": "site_google",
           "name": "Google",
           "url": "https://www.google.com/ncr",
-          "icon": "https://www.google.com/favicon.ico"
+          "icon": "https://www.google.com/favicon.ico",
+          "description": "谷歌官网,大名鼎鼎,不多说,谷歌一下,BD十下"
         },
         {
+          "id": "site_baidu",
           "name": "百度",
           "url": "https://www.baidu.com/",
-          "icon": "https://www.baidu.com/favicon.ico"
+          "icon": "https://www.baidu.com/favicon.ico",
+          "description": "百度官网,最熟悉的陌生人"
         },
         {
+          "id": "site_bing",
           "name": "Bing",
           "url": "https://cn.bing.com/",
-          "icon": "https://cn.bing.com/favicon.ico"
+          "icon": "https://cn.bing.com/favicon.ico",
+          "description": "微软Bing,华丽的鸡肋"
         },
         {
+          "id": "site_youcare",
           "name": "YouCare",
           "url": "https://youcare.world/",
-          "icon": "https://youcare.world/static/images/favicon/favicon-32x32.png"
+          "icon": "https://youcare.world/static/images/favicon/favicon-32x32.png",
+          "description": "公益性的搜索引擎,仅次谷歌"
         },
         {
+          "id": "site_miji",
           "name": "秘迹搜索",
           "url": "https://mijisou.com/",
-          "icon": "https://mijisou.com/favicon.ico"
+          "icon": "https://mijisou.com/favicon.ico",
+          "description": "这是一个不追踪你的搜索引擎"
         }
       ]
     }
