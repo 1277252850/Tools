@@ -20,29 +20,29 @@
           "id": "site_google",
           "name": "Google",
           "url": "https://www.google.com/ncr",
-          "icon": "https://www.google.com/favicon.ico",
-          "description": "谷歌官网,大名鼎鼎,不多说,谷歌一下,BD十下"
+          "icon": "assets/google.ico",
+          "description": "谷歌官网，大名鼎鼎，访问需科学上网，不多说，遇事不决，量子力学，oh，sorry，遇事不决问谷歌"
         },
         {
           "id": "site_baidu",
           "name": "百度",
           "url": "https://www.baidu.com/",
           "icon": "https://www.baidu.com/favicon.ico",
-          "description": "百度官网,最熟悉的陌生人"
+          "description": "百度官网，最熟悉的陌生人"
         },
         {
           "id": "site_bing",
           "name": "Bing",
           "url": "https://cn.bing.com/",
           "icon": "https://cn.bing.com/favicon.ico",
-          "description": "微软Bing,华丽的鸡肋"
+          "description": "微软Bing，华丽的鸡肋"
         },
         {
           "id": "site_youcare",
           "name": "YouCare",
           "url": "https://youcare.world/",
           "icon": "https://youcare.world/static/images/favicon/favicon-32x32.png",
-          "description": "公益性的搜索引擎,仅次谷歌"
+          "description": "公益性质的搜索引擎，仅次谷歌"
         },
         {
           "id": "site_miji",
@@ -50,6 +50,19 @@
           "url": "https://mijisou.com/",
           "icon": "https://mijisou.com/favicon.ico",
           "description": "这是一个不追踪你的搜索引擎"
+        }
+      ]
+    },
+    {
+      "id": "network_disk",
+      "type": "网盘",
+      "contents": [
+        {
+          "id": "site_baidu_disk",
+          "name": "百度网盘",
+          "url": "https://pan.baidu.com/",
+          "icon": "https://pan.baidu.com/box-static/disk-system/images/favicon.ico",
+          "description": "百度网盘官网"
         }
       ]
     }
