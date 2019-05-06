@@ -21,20 +21,20 @@
           "name": "Google",
           "url": "https://www.google.com/ncr",
           "icon": "assets/google.ico",
-          "description": "谷歌官网，大名鼎鼎，访问需科学上网，不多说，遇事不决，量子力学，oh，sorry，遇事不决问谷歌"
+          "description": "谷歌，大名鼎鼎，访问需科学上网，不多说，遇事不决，量子力学，oh，sorry，遇事不决问谷歌"
         },
         {
           "id": "site_baidu",
           "name": "百度",
           "url": "https://www.baidu.com/",
           "icon": "https://www.baidu.com/favicon.ico",
-          "description": "百度官网，最熟悉的陌生人"
+          "description": "百度，最熟悉的陌生人"
         },
         {
           "id": "site_bing",
           "name": "Bing",
           "url": "https://cn.bing.com/",
-          "icon": "https://cn.bing.com/favicon.ico",
+          "icon": "https://cn.bing.com/sa/simg/bing_p_rr_teal_min.ico",
           "description": "微软Bing，华丽的鸡肋"
         },
         {
@@ -48,8 +48,8 @@
           "id": "site_miji",
           "name": "秘迹搜索",
           "url": "https://mijisou.com/",
-          "icon": "https://mijisou.com/favicon.ico",
-          "description": "这是一个不追踪你的搜索引擎"
+          "icon": "https://cdn.leakzero.com/mijisou/themes/entropage/img/favicon.png?staticVersion=1555491451",
+          "description": "自称：这是一个不追踪你的搜索引擎"
         }
       ]
     },
@@ -62,7 +62,35 @@
           "name": "百度网盘",
           "url": "https://pan.baidu.com/",
           "icon": "https://pan.baidu.com/box-static/disk-system/images/favicon.ico",
-          "description": "百度网盘官网"
+          "description": "百度网盘，国内使用最广泛的网盘"
+        },
+        {
+          "id": "site_weiyun_disk",
+          "name": "腾讯微云",
+          "url": "https://www.weiyun.com/",
+          "icon": "https://img.weiyun.com/vipstyle/nr/box/img/favicon.ico",
+          "description": "腾讯微云，配合QQ使用还是不错"
+        },
+        {
+          "id": "site_lanzou_disk",
+          "name": "蓝奏云",
+          "url": "http://www.lanzou.com/",
+          "icon": "http://www.lanzou.com/favicon.ico",
+          "description": "蓝奏云，异军突起的伪百度网盘，速度还是可以"
+        },
+        {
+          "id": "site_115_disk",
+          "name": "115网盘",
+          "url": "https://115.com/",
+          "icon": "http://115.com/favicon.ico",
+          "description": "115网盘，土豪使用的网盘"
+        },
+        {
+          "id": "site_google_drive",
+          "name": "谷歌云盘",
+          "url": "https://www.google.com/intl/zh-CN/drive/",
+          "icon": "assets/google_drive.ico",
+          "description": "Google云盘，访问需科学上网，全球资源最多的网盘"
         }
       ]
     }
