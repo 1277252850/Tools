@@ -49,7 +49,89 @@
           "name": "秘迹搜索",
           "url": "https://mijisou.com/",
           "icon": "https://cdn.leakzero.com/mijisou/themes/entropage/img/favicon.png?staticVersion=1555491451",
-          "description": "自称：这是一个不追踪你的搜索引擎"
+          "description": "这是一个不追踪你的搜索引擎"
+        }
+      ]
+    },
+    {
+      "id": "network_disk_search_engine",
+      "type": "网盘搜索引擎",
+      "contents": [
+        {
+          "id": "site_xiaobaipan",
+          "name": "小白盘",
+          "url": "https://www.xiaobaipan.com/",
+          "icon": "https://www.xiaobaipan.com/static/assets/ico/favicon.png",
+          "description": "小白盘收录了大量的百度网盘资源,页面清新，实时检查失效资源.帮您省心快速找到想要的电影,电视剧,小说,文档,音乐,软件,种子等热门网盘资源"
+        },
+        {
+          "id": "site_xiaokesoso",
+          "name": "小可搜搜",
+          "url": "https://www.xiaokesoso.com/",
+          "icon": "https://www.xiaokesoso.com/media/img/logo/favicon.ico",
+          "description": "小可搜搜，新一代网盘搜索引擎，有你更方便"
+        },
+        {
+          "id": "site_slimego",
+          "name": "史莱姆搜索",
+          "url": "http://www.slimego.cn/",
+          "icon": "http://www.slimego.cn/images/favicon.ico",
+          "description": "最丰富的学习资料库,收集整理了大量免费资源,教学资源,百度云资源,网盘资源。包含主流的资源搜索外,还能找到各行业细分的学习资源。"
+        },
+        {
+          "id": "site_panc",
+          "name": "胖次搜索",
+          "url": "https://www.panc.cc/",
+          "icon": "https://www.panc.cc/static/css/pancss/img/favicon.ico?v=20170226",
+          "description": "胖次专业网盘搜索引擎，百度云网盘搜索工具，百度云网盘解析工具，结合胖次社区，聚集了大量热爱分享资源的朋友，资源求助，资源问答，我们都有共同的分享精神。"
+        },
+        {
+          "id": "site_daysou",
+          "name": "天天搜索",
+          "url": "http://www.daysou.com/",
+          "icon": "http://www.daysou.com/ico.ico",
+          "description": "天天网盘搜索引擎，别具一格的网盘搜索，基于网页内容的搜索"
+        }
+      ]
+    },
+    {
+      "id": "video_resource",
+      "type": "影视资源",
+      "contents": [
+        {
+          "id": "site_6v_movie",
+          "name": "6v电影",
+          "url": "https://www.66s.cc/",
+          "icon": "http://www.hao6v.com/favicon.ico",
+          "description": "新版6v电影，支持在线播放和下载，资源挺全面的，有枪版资源"
+        },
+        {
+          "id": "site_piaohua",
+          "name": "飘花资源网",
+          "url": "https://www.piaohua.com/",
+          "icon": "https://www.piaohua.com/favicon.ico",
+          "description": "飘花资源网，每天搜集最新迅雷免费电影下载"
+        },
+        {
+          "id": "site_bt_shoufa",
+          "name": "BT首发",
+          "url": "http://btshoufa.com/",
+          "icon": "http://btshoufa.com/favicon.ico",
+          "description": "BT首发论坛，提供免费的高清电影种子下载，资源挺全面的"
+        },
+        {
+          "id": "site_no_video",
+          "name": "NO视频",
+          "url": "http://www.novipnoad.com/",
+          "icon": "http://www.novipnoad.com/favicon.ico",
+          "description": "NO视频为用户提供及时的海外热门剧集在线观看，24小时多平台同步，友好无广告，致力于最轻松的追剧体验。"
+        },
+        {
+          "id": "site_zimuku",
+          "name": "字幕库",
+          "url": "https://www.zimuku.la/",
+          "icon": "https://www.zimuku.la/images/v2/favicon.png",
+          "description": "字幕库，不仅可以下载字幕，而且还提供片源"
         }
       ]
     },

@@ -8,7 +8,6 @@ fetch('config.json')
         init_search_area(result);
         init_site_area(result);
     });
-
 // 初始化 搜索区域
 function init_search_area(config) {
     for (let i = 0; i < config['searches'].length; i++) {
@@ -25,7 +24,7 @@ function init_search_area(config) {
         $("#search_area").append(search_html);
         // 绑定Button点击事件
         $(`#button_${config['searches'][i]['id']}`).click(() => {
-            window.open(config['searches'][i]['url'] + $(`#input_${config['searches'][i]['id']}`).val());
+            window.open(config['searches'][i]['url'] + encodeURIComponent($(`#input_${config['searches'][i]['id']}`).val()));
         });
     }
     // 搜索框内容同步
@@ -41,7 +40,7 @@ function init_search_area(config) {
         if (e.which === 13) {
             for (let i = 0; i < config['searches'].length; i++) {
                 if ($(e.target).attr('id') === `input_${config['searches'][i]['id']}`) {
-                    window.open(config['searches'][i]['url'] + $(`#input_${config['searches'][i]['id']}`).val());
+                    window.open(config['searches'][i]['url'] + encodeURIComponent($(`#input_${config['searches'][i]['id']}`).val()));
                 }
             }
         }
