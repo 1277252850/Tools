@@ -136,6 +136,88 @@
       ]
     },
     {
+      "id": "bt_search_engine",
+      "type": "种子磁力搜索引擎",
+      "contents": [
+        {
+          "id": "site_torrentkitty",
+          "name": "Torrent Kitty",
+          "url": "https://www.torrentkitty.tv/search/",
+          "icon": "https://www.torrentkitty.tv/favicon.ico",
+          "description": "一个知名的种子搜索引擎，资源丰富  d=====(￣▽￣*)b"
+        },
+        {
+          "id": "site_cilimao",
+          "name": "磁力猫",
+          "url": "https://www.cilimao.xyz/",
+          "icon": "https://cilimao-static.b0.upaiyun.com/other/1cc079e0-8ca8-11e7-8b53-01d4f1f3d297.ico",
+          "description": "磁力猫，种子、磁力、百度云搜索引擎，搜索到的电影会显示豆瓣评分，同时支持在线播放，感觉挺nice的。b（￣▽￣）d　"
+        },
+        {
+          "id": "site_nyaa",
+          "name": "Nyaa Torrents",
+          "url": "https://nyaa.si/",
+          "icon": "https://nyaa.si/static/favicon.png",
+          "description": "Nyaa Torrents，动漫磁力种子搜索引擎，二次元的福利。(￣▽￣)"
+        },
+        {
+          "id": "site_xiandan",
+          "name": "磁力搜",
+          "url": "http://bt.xiandan.in/",
+          "icon": "http://bt.cywacg.com/favicon.ico",
+          "description": "磁力搜网页版，聚合了多个磁力搜索引擎。（⊙ｏ⊙）"
+        },
+        {
+          "id": "site_feikebt",
+          "name": "飞客BT",
+          "url": "http://feikebt.vip/",
+          "icon": "http://feikebt.fun/static/images/favicon.ico",
+          "description": "虽然广告多了点，不过资源还是挺丰富的。(ง •_•)ง"
+        }
+      ]
+    },
+    {
+      "id": "bt_vip_parse",
+      "type": "VIP视频音乐解析",
+      "contents": [
+        {
+          "id": "site_fxw",
+          "name": "分享网解析",
+          "url": "https://vip.fxw.la/",
+          "icon": "https://vip.fxw.la/img/favicon.ico",
+          "description": "分享网解析，可在线解析爱奇艺、腾讯视频、优酷、芒果TV，乐视TV，土豆、暴风影音、1905、天天看看、PPTV、音悦台、56我乐、风行网、酷6、华数TV、新浪视频、搜狐视频、爆米花网、看看新闻、糖豆、央视网、AcFun、哔哩哔哩、爱拍原创等网站的VIP视频，还可以解析VIP音乐，emmmmm很强大d=====(￣▽￣*)b"
+        },
+        {
+          "id": "site_qmaile",
+          "name": "全民解析",
+          "url": "http://www.qmaile.com/",
+          "icon": "http://www.qmaile.com/favicon.ico",
+          "description": "全民VIP解析，能在线观看优酷、爱奇艺、腾讯、乐视、芒果等VIP视频，还提供全网视频的搜索和在线播放，若不能播放，请多换几个解析接口。总的来说还是挺nice的。b（￣▽￣）d　"
+        },
+        {
+          "id": "site_niuga",
+          "name": "牛嘎解析",
+          "url": "http://www.niuga.cn/",
+          "icon": "http://www.niuga.cn/favicon.ico",
+          "description": "牛嘎vip视频解析网，可在线解析爱奇艺、腾讯、优酷、乐视、搜狐等VIP会员影视，解析VIP视频的速度还是可以。(ง •_•)ง"
+        },
+        {
+          "id": "site_zhuolin",
+          "name": "音乐解析",
+          "url": "http://music.zhuolin.wang/",
+          "icon": "http://music.zhuolin.wang/favicon.ico",
+          "description": "一款在线免费下载付费VIP音乐的网站。具有音乐搜索、播放、下载、歌词同步显示、个人音乐播放列表同步等功能。（⊙ｏ⊙）"
+        },
+        {
+          "id": "site_mihu123",
+          "name": "米狐音乐",
+          "url": "http://www.mihu123.com/",
+          "icon": "http://www.mihu123.com/favicon.ico",
+          "description": "各种语言的歌曲都有，而且还挺丰富的，有些VIP收费的歌曲，甚至下架的歌曲都能听，不过需要会员登录后才能下载，稍稍有点可惜。＞﹏＜"
+        }
+      ]
+    },
+    {
       "id": "network_disk",
       "type": "网盘",
       "contents": [
