@@ -143,7 +143,7 @@
           "id": "site_torrentkitty",
           "name": "Torrent Kitty",
           "url": "https://www.torrentkitty.tv/search/",
-          "icon": "https://www.torrentkitty.tv/favicon.ico",
+          "icon": "assets/torrent_kitty.ico",
           "description": "一个知名的种子搜索引擎，资源丰富  d=====(￣▽￣*)b"
         },
         {
@@ -178,7 +178,7 @@
     },
     {
       "id": "bt_vip_parse",
-      "type": "VIP视频音乐解析",
+      "type": "VIP视频音乐",
       "contents": [
         {
           "id": "site_fxw",
@@ -203,7 +203,7 @@
         },
         {
           "id": "site_zhuolin",
-          "name": "音乐解析",
+          "name": "VIP音乐",
           "url": "http://music.zhuolin.wang/",
           "icon": "http://music.zhuolin.wang/favicon.ico",
           "description": "一款在线免费下载付费VIP音乐的网站。具有音乐搜索、播放、下载、歌词同步显示、个人音乐播放列表同步等功能。（⊙ｏ⊙）"
