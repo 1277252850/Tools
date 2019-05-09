@@ -65,7 +65,7 @@ function init_site_area(config) {
                             <img class="material-icons my_icon" src="${config['sites'][i]['contents'][j]['icon']}" alt="">
                             <span class="my_span">${config['sites'][i]['contents'][j]['name']}</span>
                         </a>
-                        <div class="mdl-tooltip" data-mdl-for="a_${config['sites'][i]['contents'][j]['id']}">${config['sites'][i]['contents'][j]['description']}</div>
+                        <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="a_${config['sites'][i]['contents'][j]['id']}">${config['sites'][i]['contents'][j]['description']}</div>
                     </li>
                 `;
             $(`#ul_${config['sites'][i]['id']}`).append(site_html);
