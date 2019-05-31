@@ -1,88 +1,36 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="导航">
-    <meta name="keywords" content="皮皮猪导航">
-    <meta name="description" content="皮皮猪导航，收集各类有用网站，遇事不决，上皮皮猪导航，李时珍的皮">
-    <title>皮皮猪导航</title>
-    <!--    Global site tag (gtag.js) - Google Analytics    -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125317168-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-125317168-2');
-    </script>
-    <!--    Google AdSense  -->
-    <script async src="js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-3368498287347766",
-            enable_page_level_ads: true
-        });
-    </script>
-    <!--    Material Design Lite (mdl) 样式    -->
-    <link rel="stylesheet" href="css/material.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <!--    自定义样式   -->
-    <link rel="stylesheet" href="css/my_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel='stylesheet' href='css/icon.min.css'>
 </head>
 <body>
-<!--    网页界面    -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <!--    固定header    -->
-    <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title" onclick="window.location.reload()" style="cursor: pointer">皮皮猪导航</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-            <nav class="mdl-navigation mdl-layout--fixed-header">
-                <iframe allowtransparency="true" frameborder="0" width="160" height="36" scrolling="no"
-                        src="https://tianqi.2345.com/plugin/widget/index.htm?s=3&z=3&t=0&v=0&d=2&bd=0&k=000000&f=ffffff&ltf=009944&htf=ff80c0&q=1&e=1&a=1&c=54511&w=180&h=36&align=center">
-                </iframe>
-                <!--                <a class="mdl-navigation__link" href="">Link</a>-->
-            </nav>
+<header>
+    <div class="ui blue inverted stackable menu" style="border-radius: 0;">
+        <a class="ui item" onclick="window.location.reload()">皮皮猪导航</a>
+        <a class="ui item" href="books.html">国学书籍</a>
+        <div class="right menu">
+            <div class="item">
+                <iframe allowtransparency="true" frameborder="0" width="180" height="36" scrolling="no"
+                        src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=3&t=1&v=0&d=3&bd=0&k=000000&f=ffffff&ltf=ffff80&htf=ff80ff&q=1&e=1&a=1&c=54511&w=180&h=36&align=center"></iframe>
+            </div>
         </div>
-    </header>
-    <!--    更多  -->
-    <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title" onclick="window.location.reload()" style="cursor: pointer">皮皮猪导航</span>
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="books.html">国学书籍</a>
-        </nav>
     </div>
-    <!--    正文  -->
-    <main class="mdl-layout__content  mdl-typography--text-center">
-        <div class="page-content">
-            <h3>皮皮猪导航</h3>
-        </div>
-        <!--    加载动画    -->
-        <div class="mdl-spinner mdl-js-spinner is-active my_loading" id="loading"></div>
-        <!--    搜索区域    -->
-        <div class="page-content" id="search_area"></div>
-        <!--    网址区域    -->
-        <div class="mdl-grid my_center" id="site_area"></div>
-    </main>
-    <!--    <footer class="mdl-mini-footer">-->
-    <!--        <div class="mdl-mini-footer__left-section">-->
-    <!--            <div class="mdl-logo">Title</div>-->
-    <!--            <ul class="mdl-mini-footer__link-list">-->
-    <!--                <li><a href="#">Help</a></li>-->
-    <!--                <li><a href="#">Privacy & Terms</a></li>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </footer>-->
-</div>
-<!--    Jquery  -->
-<script src="js/jquery-3.4.1_min.js"></script>
-<!--    Material Design Lite (mdl)   -->
-<script src="js/material.min.js"></script>
-<!--    网页逻辑    -->
-<script src="js/my_script.js"></script>
+</header>
+<main style="padding: 16px">
+    <div class="ui text container center aligned huge header">皮皮猪导航</div>
+    <div id="search_area"></div>
+    <div id="site_area" class="ui six column center aligned doubling grid" style="margin-top: 8px;">
+    </div>
+</main>
 
+<script src="js/jquery-3.4.1_min.js"></script>
+<script src="js/semantic.min.js"></script>
+<script src="js/my_script.js"></script>
+<script>
+</script>
 </body>
 </html>

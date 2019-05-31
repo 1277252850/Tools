@@ -11,20 +11,25 @@ fetch('config.json')
 // 初始化 搜索区域
 function init_search_area(config) {
     for (let i = 0; i < config['searches'].length; i++) {
-        let search_html = `
-                        <div class="page-content">
-                            <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="input_${config['searches'][i]['id']}" ${i === 0 ? 'autofocus="autofocus"' : ''}>
-                                <label class="mdl-textfield__label" for="input_${config['searches'][i]['id']}"></label>
-                            </div>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="button_${config['searches'][i]['id']}">
-                                ${config['searches'][i]['name']}
-                            </button>
-                        </div>`;
+        let search_html =
+            `
+                <div class="ui text container center aligned" style="margin-top: 16px">
+                    <div class="ui icon input" style="width: 64%;margin-right: 0;padding-right: 0">
+                        <input id="input_${config['searches'][i]['id']}" ${i === 0 ? 'autofocus="autofocus"' : ''} type="text" placeholder="">
+                        <i id="icon_${config['searches'][i]['id']}" class="close link icon"></i>
+                    </div>
+                    <button id="button_${config['searches'][i]['id']}" class="large ui blue button">${config['searches'][i]['name']}</button>
+                </div>
+            `;
         $("#search_area").append(search_html);
         // 绑定Button点击事件
         $(`#button_${config['searches'][i]['id']}`).click(() => {
             window.open(config['searches'][i]['url'] + encodeURIComponent($(`#input_${config['searches'][i]['id']}`).val()));
+        });
+        // 清除按钮
+        $(`#icon_${config['searches'][i]['id']}`).click(function () {
+            $('input').val('');
+            $(this).siblings('input').focus();
         });
     }
     // 搜索框内容同步
@@ -51,24 +56,27 @@ function init_search_area(config) {
 function init_site_area(config) {
     for (let i = 0; i < config['sites'].length; i++) {
         // 添加网址类别
-        let site_type = `
-                        <div class="mdl-cell mdl-cell--2-col mdl-shadow--2dp my_top_padding">
-                            <span>${config['sites'][i]['type']}</span>
-                            <ul class="demo-list-icon mdl-list" id="ul_${config['sites'][i]['id']}"></ul>
-                        </div>`;
+        let site_type =
+            `
+            <div class="column">
+                <div class="ui segment">
+                    <div class="ui blue top attached label"><div class="ui center aligned container">${config['sites'][i]['type']}</div></div>
+                    <div id="list_${config['sites'][i]['id']}" class="ui relaxed middle aligned list"></div>
+                </div>
+            </div>
+            `;
         $("#site_area").append(site_type);
         // 添加网址
         for (let j = 0; j < config['sites'][i]['contents'].length; j++) {
-            let site_html = `
-                    <li class="mdl-list__item">
-                        <a id="a_${config['sites'][i]['contents'][j]['id']}" class="mdl-list__item-primary-content my_center" href="${config['sites'][i]['contents'][j]['url']}" target="_blank">
-                            <img class="material-icons my_icon" src="${config['sites'][i]['contents'][j]['icon']}" alt="">
-                            <span class="my_span">${config['sites'][i]['contents'][j]['name']}</span>
-                        </a>
-                        <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="a_${config['sites'][i]['contents'][j]['id']}">${config['sites'][i]['contents'][j]['description']}</div>
-                    </li>
+            let site_html =
+                `
+                <a class="item" href="${config['sites'][i]['contents'][j]['url']}" target="_blank" data-position="top center" data-content="${config['sites'][i]['contents'][j]['description']}">
+                    <img class="ui image" width="32" height="32" src="${config['sites'][i]['contents'][j]['icon']}"/>
+                    <div class="ui content" style="width: 98px;padding-left: 0">${config['sites'][i]['contents'][j]['name']}</div>
+                </a>
                 `;
-            $(`#ul_${config['sites'][i]['id']}`).append(site_html);
+            $(`#list_${config['sites'][i]['id']}`).append(site_html);
         }
     }
+    $('.item').popup();
 }
