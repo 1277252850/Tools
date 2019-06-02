@@ -17,30 +17,35 @@
       "type": "谷歌导航",
       "contents": [
         {
+          "id": "site_scmor",
           "name": "谷歌镜像导航",
           "url": "http://ac.scmor.com/",
           "icon": "http://ac.scmor.com/res/favicon.ico",
           "description": "谷歌镜像导航，实时更新并提供Google学术搜索镜像、Google网页搜索镜像。👍"
         },
         {
+          "id": "site_yanke",
           "name": "谷歌镜像搜素",
           "url": "https://yanke.info/google.htm",
           "icon": "https://yanke.info/favicon.ico",
           "description": "快速Google镜像搜索。👍"
         },
         {
+          "id": "site_xueshuwu",
           "name": "谷歌导航",
           "url": "http://sci.xueshuwu.cn/google/",
           "icon": "http://sci.xueshuwu.cn/favicon.ico",
           "description": "谷歌导航，提供Google学术搜索镜像、Google网页搜索镜像，以及SCI-HUB学术论文下载镜像。科研者的福音。"
         },
         {
+          "id": "site_gugejx",
           "name": "谷歌镜像",
           "url": "https://www.gugejx.com/",
           "icon": "https://www.gugejx.com/favicon.ico",
           "description": "谷歌镜像导航，提供最新可以访问的谷歌镜像网址，还有一些实用的网址。"
         },
         {
+          "id": "site_gufenso",
           "name": "谷粉搜导航",
           "url": "http://gufenso.coderschool.cn/",
           "icon": "assets/default_icon.png",
@@ -53,30 +58,35 @@
       "type": "普通搜索引擎",
       "contents": [
         {
+          "id": "site_google",
           "name": "Google",
           "url": "https://www.google.com/ncr",
           "icon": "assets/google.ico",
           "description": "谷歌，大名鼎鼎，访问需科学上网，不多说，遇事不决，量子力学，oh，sorry，遇事不决问谷歌。👍"
         },
         {
+          "id": "site_baidu",
           "name": "百度",
           "url": "https://www.baidu.com/",
           "icon": "https://www.baidu.com/favicon.ico",
           "description": "百度，最熟悉的陌生人"
         },
         {
+          "id": "site_bing",
           "name": "Bing",
           "url": "https://cn.bing.com/",
           "icon": "https://cn.bing.com/sa/simg/bing_p_rr_teal_min.ico",
           "description": "微软Bing，华丽的鸡肋"
         },
         {
+          "id": "site_youcare",
           "name": "YouCare",
           "url": "https://youcare.world/",
           "icon": "https://youcare.world/static/images/favicon/favicon-32x32.png",
           "description": "公益性质的搜索引擎，仅次谷歌"
         },
         {
+          "id": "site_miji",
           "name": "秘迹搜索",
           "url": "https://mijisou.com/",
           "icon": "https://cdn.leakzero.com/mijisou/themes/entropage/img/favicon.png?staticVersion=1555491451",
@@ -89,30 +99,35 @@
       "type": "网盘搜索引擎",
       "contents": [
         {
+          "id": "site_xiaobaipan",
           "name": "小白盘",
           "url": "https://www.xiaobaipan.com/",
           "icon": "https://www.xiaobaipan.com/static/assets/ico/favicon.png",
           "description": "小白盘收录了大量的百度网盘资源,页面清新，实时检查失效资源.帮您省心快速找到想要的电影,电视剧,小说,文档,音乐,软件,种子等热门网盘资源"
         },
         {
+          "id": "site_xiaokesoso",
           "name": "小可搜搜",
           "url": "https://www.xiaokesoso.com/",
           "icon": "https://www.xiaokesoso.com/media/img/logo/favicon.ico",
           "description": "小可搜搜，新一代网盘搜索引擎，有你更方便"
         },
         {
+          "id": "site_slimego",
           "name": "史莱姆搜索",
           "url": "http://www.slimego.cn/",
           "icon": "http://www.slimego.cn/images/favicon.ico",
           "description": "最丰富的学习资料库,收集整理了大量免费资源,教学资源,百度云资源,网盘资源。包含主流的资源搜索外,还能找到各行业细分的学习资源。"
         },
         {
+          "id": "site_panc",
           "name": "胖次搜索",
           "url": "https://www.panc.cc/",
           "icon": "https://www.panc.cc/static/css/pancss/img/favicon.ico?v=20170226",
           "description": "胖次专业网盘搜索引擎，百度云网盘搜索工具，百度云网盘解析工具，结合胖次社区，聚集了大量热爱分享资源的朋友，资源求助，资源问答，我们都有共同的分享精神。"
         },
         {
+          "id": "site_daysou",
           "name": "天天搜索",
           "url": "http://www.daysou.com/",
           "icon": "http://www.daysou.com/ico.ico",
@@ -125,30 +140,35 @@
       "type": "种子磁力搜索引擎",
       "contents": [
         {
+          "id": "site_torrentkitty",
           "name": "Torrent Kitty",
           "url": "https://www.torrentkitty.tv/search/",
           "icon": "assets/torrent_kitty.ico",
           "description": "一个知名的种子搜索引擎，资源丰富。👍"
         },
         {
+          "id": "site_cilimao",
           "name": "磁力猫",
           "url": "https://www.cilimao.xyz/",
           "icon": "https://cilimao-static.b0.upaiyun.com/other/1cc079e0-8ca8-11e7-8b53-01d4f1f3d297.ico",
           "description": "磁力猫，种子、磁力、百度云搜索引擎，搜索到的电影会显示豆瓣评分，同时支持在线播放，感觉挺nice的。👍"
         },
         {
+          "id": "site_nyaa",
           "name": "Nyaa Torrents",
           "url": "https://nyaa.si/",
           "icon": "https://nyaa.si/static/favicon.png",
           "description": "Nyaa Torrents，动漫磁力种子搜索引擎，二次元的福利。"
         },
         {
+          "id": "site_xiandan",
           "name": "磁力搜",
           "url": "http://bt.xiandan.in/",
           "icon": "http://bt.cywacg.com/favicon.ico",
           "description": "磁力搜网页版，聚合了多个磁力搜索引擎。"
         },
         {
+          "id": "site_feikebt",
           "name": "飞客BT",
           "url": "http://feikebt.vip/",
           "icon": "http://feikebt.fun/static/images/favicon.ico",
@@ -161,30 +181,35 @@
       "type": "影视资源",
       "contents": [
         {
+          "id": "site_6v_movie",
           "name": "6v电影",
           "url": "https://www.66s.cc/",
           "icon": "http://www.hao6v.com/favicon.ico",
           "description": "新版6v电影，支持在线播放和下载，资源挺全面的，有枪版资源"
         },
         {
+          "id": "site_piaohua",
           "name": "飘花资源网",
           "url": "https://www.piaohua.com/",
           "icon": "https://www.piaohua.com/favicon.ico",
           "description": "飘花资源网，每天搜集最新迅雷免费电影下载"
         },
         {
+          "id": "site_bt_shoufa",
           "name": "BT首发",
           "url": "http://btshoufa.com/",
           "icon": "http://btshoufa.com/favicon.ico",
           "description": "BT首发论坛，提供免费的高清电影种子下载，资源挺全面的"
         },
         {
+          "id": "site_no_video",
           "name": "NO视频",
           "url": "http://www.novipnoad.com/",
           "icon": "http://www.novipnoad.com/favicon.ico",
           "description": "NO视频为用户提供及时的海外热门剧集在线观看，24小时多平台同步，友好无广告，致力于最轻松的追剧体验。"
         },
         {
+          "id": "site_zimuku",
           "name": "字幕库",
           "url": "https://www.zimuku.la/",
           "icon": "https://www.zimuku.la/images/v2/favicon.png",
@@ -197,30 +222,35 @@
       "type": "VIP视频音乐",
       "contents": [
         {
+          "id": "site_fxw",
           "name": "分享网解析",
           "url": "https://vip.fxw.la/",
           "icon": "https://vip.fxw.la/img/favicon.ico",
           "description": "分享网解析，可在线解析爱奇艺、腾讯视频、优酷、芒果TV，乐视TV，土豆、暴风影音、1905、天天看看、PPTV、音悦台、56我乐、风行网、酷6、华数TV、新浪视频、搜狐视频、爆米花网、看看新闻、糖豆、央视网、AcFun、哔哩哔哩、爱拍原创等网站的VIP视频，还可以解析VIP音乐，emmmmm确实很强大👍"
         },
         {
+          "id": "site_qmaile",
           "name": "全民解析",
           "url": "http://www.qmaile.com/",
           "icon": "http://www.qmaile.com/favicon.ico",
           "description": "全民VIP解析，能在线观看优酷、爱奇艺、腾讯、乐视、芒果等VIP视频，还提供全网视频的搜索和在线播放，若不能播放，请多换几个解析接口。总的来说还是挺nice的。"
         },
         {
+          "id": "site_niuga",
           "name": "牛嘎解析",
           "url": "http://www.niuga.cn/",
           "icon": "http://www.niuga.cn/favicon.ico",
           "description": "牛嘎vip视频解析网，可在线解析爱奇艺、腾讯、优酷、乐视、搜狐等VIP会员影视，解析VIP视频的速度还是可以。"
         },
         {
+          "id": "site_zhuolin",
           "name": "VIP音乐",
           "url": "http://music.zhuolin.wang/",
           "icon": "http://music.zhuolin.wang/favicon.ico",
           "description": "一款在线免费下载付费VIP音乐的网站。具有音乐搜索、播放、下载、歌词同步显示、个人音乐播放列表同步等功能。"
         },
         {
+          "id": "site_mihu123",
           "name": "米狐音乐",
           "url": "http://www.mihu123.com/",
           "icon": "http://www.mihu123.com/favicon.ico",
@@ -233,30 +263,35 @@
       "type": "软件资源",
       "contents": [
         {
+          "id": "site_52pojie",
           "name": "52破解",
           "url": "https://www.52pojie.cn/forum-16-1.html",
           "icon": "https://www.52pojie.cn/favicon.ico",
           "description": "52破解论坛精品软件区，提供丰富的PC端（Windows、Mac）和移动端（Android、IOS）破解软件，论坛比较活跃，就很棒。👍"
         },
         {
+          "id": "site_xue51",
           "name": "软件学堂",
           "url": "http://www.xue51.com/",
           "icon": "http://www.xue51.com/favicon.ico",
           "description": "软件学堂，提供丰富的PC端（Windows、Mac）和移动端（Android）破解软件，资源较丰富。"
         },
         {
+          "id": "site_hackhw",
           "name": "黑域基地",
           "url": "http://www.hackhw.com/",
           "icon": "http://www.hackhw.com/favicon.ico",
           "description": "黑域基地，不仅有丰富的破解软件，还有学习资源和一些源码可供下载。"
         },
         {
+          "id": "site_ypojie",
           "name": "易破解",
           "url": "http://www.ypojie.com/",
           "icon": "http://www.ypojie.com/favicon.ico",
           "description": "易破解网站提供大量破解软件和技术教程，还有一些系统镜像资源。"
         },
         {
+          "id": "site_zdfans",
           "name": "ZD423",
           "url": "http://www.zdfans.com/",
           "icon": "http://www.zdfans.com/favicon.ico",
@@ -269,30 +304,35 @@
       "type": "游戏资源",
       "contents": [
         {
+          "id": "site_3dmgame",
           "name": "3DM",
           "url": "https://www.3dmgame.com/",
           "icon": "https://www.3dmgame.com/favicon.ico",
           "description": "3大妈，提供丰富游戏资讯和资源的网站，大名鼎鼎，不多说，就很棒。👍"
         },
         {
+          "id": "site_ali213",
           "name": "游侠网",
           "url": "http://www.ali213.net/",
           "icon": "http://www.ali213.net/favicon.ico",
           "description": "游侠网，提供丰富游戏资讯和资源的网站，大名鼎鼎，不多说，就很棒。👍"
         },
         {
+          "id": "site_9damao",
           "name": "9DM",
           "url": "http://www.9damao.com/",
           "icon": "http://www.9damao.com/favicon.ico",
           "description": "9大妈，感觉就是靠老滚的MOD撑起来的。丰富的游戏MOD资源，也有大量的游戏资源，nice。😍"
         },
         {
+          "id": "site_yxdown",
           "name": "游迅网",
           "url": "http://www.yxdown.com/",
           "icon": "http://www.yxdown.com/favicon.ico",
           "description": "游迅网，资源还是比较丰富的。"
         },
         {
+          "id": "site_renxufeng",
           "name": "GBT游戏空间",
           "url": "http://renxufeng.ys168.com/",
           "icon": "http://renxufeng.ys168.com/favicon.ico",
@@ -305,30 +345,35 @@
       "type": "网盘",
       "contents": [
         {
+          "id": "site_baidu_disk",
           "name": "百度网盘",
           "url": "https://pan.baidu.com/",
           "icon": "https://pan.baidu.com/box-static/disk-system/images/favicon.ico",
           "description": "百度网盘，国内使用最广泛的网盘。"
         },
         {
+          "id": "site_weiyun_disk",
           "name": "腾讯微云",
           "url": "https://www.weiyun.com/",
           "icon": "https://img.weiyun.com/vipstyle/nr/box/img/favicon.ico",
           "description": "腾讯微云，配合QQ使用还是不错。"
         },
         {
+          "id": "site_lanzou_disk",
           "name": "蓝奏云",
           "url": "http://www.lanzou.com/",
           "icon": "http://www.lanzou.com/favicon.ico",
           "description": "蓝奏云，异军突起的伪百度网盘，速度还是可以。"
         },
         {
+          "id": "site_115_disk",
           "name": "115网盘",
           "url": "https://115.com/",
           "icon": "http://115.com/favicon.ico",
           "description": "115网盘，土豪使用的网盘。"
         },
         {
+          "id": "site_google_drive",
           "name": "谷歌云盘",
           "url": "https://www.google.com/intl/zh-CN/drive/",
           "icon": "assets/google_drive.ico",
