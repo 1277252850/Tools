@@ -3,7 +3,7 @@
     {
       "id": "google_search",
       "name": "谷歌镜像",
-      "url": "https://vip.kuaimen.bid/search?q="
+      "url": "https://google.yuanzhe.me/search?q="
     },
     {
       "id": "baidu_search",
@@ -132,8 +132,8 @@
         },
         {
           "name": "磁力猫",
-          "url": "https://www.cilimao.xyz/",
-          "icon": "https://cilimao-static.b0.upaiyun.com/other/1cc079e0-8ca8-11e7-8b53-01d4f1f3d297.ico",
+          "url": "https://www.cilimao.me/",
+          "icon": "https://cdn.qianpanso.cn/other/1cc079e0-8ca8-11e7-8b53-01d4f1f3d297.ico",
           "description": "磁力猫，种子、磁力、百度云搜索引擎，搜索到的电影会显示豆瓣评分，同时支持在线播放，感觉挺nice的。👍"
         },
         {
@@ -282,8 +282,8 @@
         },
         {
           "name": "9DM",
-          "url": "http://www.9damao.com/",
-          "icon": "http://www.9damao.com/favicon.ico",
+          "url": "http://www.9damao.net/",
+          "icon": "http://www.9damao.net/favicon.ico",
           "description": "9大妈，感觉就是靠老滚的MOD撑起来的。丰富的游戏MOD资源，也有大量的游戏资源，nice。😍"
         },
         {
@@ -297,6 +297,42 @@
           "url": "http://renxufeng.ys168.com/",
           "icon": "http://renxufeng.ys168.com/favicon.ico",
           "description": "GBT小组游戏空间，提供大量的游戏资源种子。"
+        }
+      ]
+    },
+    {
+      "id": "video_site",
+      "type": "视频网站",
+      "contents": [
+        {
+          "name": "哔哩哔哩",
+          "url": "https://www.bilibili.com/",
+          "icon": "https://www.bilibili.com/favicon.ico",
+          "description": "B站，这里有最及时的动漫新番，最棒的ACG氛围，最有创意的Up主。大家可以在这里找到许多欢乐。然而，我是去B站学习的😄"
+        },
+        {
+          "name": "优酷",
+          "url": "https://www.youku.com/",
+          "icon": "https://gw.alicdn.com/tfs/TB1hejrSXzqK1RjSZFoXXbfcXXa-48-48.png",
+          "description": "优酷，老牌视频网站，资源丰富。"
+        },
+        {
+          "name": "爱奇艺",
+          "url": "http://www.iqiyi.com/",
+          "icon": "http://www.iqiyipic.com/common/images/logo.ico",
+          "description": "爱奇艺，老牌视频网站，资源丰富。"
+        },
+        {
+          "name": "腾讯视频",
+          "url": "https://v.qq.com/",
+          "icon": "https://v.qq.com/favicon.ico",
+          "description": "腾讯视频，老牌视频网站，资源丰富。"
+        },
+        {
+          "name": "AcFun",
+          "url": "https://www.acfun.cn/",
+          "icon": "https://cdn.aixifan.com/ico/favicon.ico",
+          "description": "A站，老得快不行了的视频弹幕网站。"
         }
       ]
     },
@@ -333,6 +369,42 @@
           "url": "https://www.google.com/intl/zh-CN/drive/",
           "icon": "assets/google_drive.ico",
           "description": "Google云盘，访问需科学上网，全球资源最多的网盘。👍"
+        }
+      ]
+    },
+    {
+      "id": "code_hub",
+      "type": "代码仓库",
+      "contents": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/",
+          "icon": "https://github.com/fluidicon.png",
+          "description": "GitHub，全球最大免费代码仓库，也是全球最大同性交友网站😏"
+        },
+        {
+          "name": "GitLab",
+          "url": "https://about.gitlab.com/",
+          "icon": "https://about.gitlab.com/ico/favicon.ico",
+          "description": "GitLab，提供免费的私有个人代码仓库，资源仅次于GitHub。"
+        },
+        {
+          "name": "码云",
+          "url": "https://gitee.com/",
+          "icon": "https://gitee.com/logo_themecolor.png",
+          "description": "码云，国内免费代码仓库"
+        },
+        {
+          "name": "SourceForge",
+          "url": "https://sourceforge.net/",
+          "icon": "https://a.fsdn.com/con/img/sandiego/svg/originals/sf-icon-orange-no_sf.svg",
+          "description": "SourceForge，一家国外的开源和商业软件仓库，资源丰富。"
+        },
+        {
+          "name": "码市",
+          "url": "https://coding.net/",
+          "icon": "https://dn-coding-net-production-static.codehub.cn/platform/favicon.ico",
+          "description": "码市，是一个面向开发者的云端开发平台，提供 Git/SVN 代码托管、任务管理、在线 WebIDE、Cloud Studio、开发协作、文件管理、Wiki 管理、提供免费的个人服务及企业版本的服务"
         }
       ]
     }
