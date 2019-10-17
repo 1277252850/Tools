@@ -4,10 +4,10 @@ fetch('config.json')
         return response.json();
     })
     .then((result) => {
-        $("#loading").hide();
         init_search_area(result);
         init_site_area(result);
     });
+
 // 初始化 搜索区域
 function init_search_area(config) {
     for (let i = 0; i < config['searches'].length; i++) {
