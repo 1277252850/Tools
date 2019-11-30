@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b915865b-7cd7-4cc4-9cad-4af07ab31600" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,15 +17,6 @@
         <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>video_site</find>
-      <find>cili</find>
-      <find>9dm</find>
-      <find>loading</find>
-      <find>磁力</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -76,7 +68,10 @@
       <workItem from="1564220554921" duration="2000" />
       <workItem from="1571327764018" duration="191000" />
       <workItem from="1572543449649" duration="497000" />
-      <workItem from="1575084493561" duration="891000" />
+      <workItem from="1575084493561" duration="992000" />
+      <workItem from="1575091688081" duration="12000" />
+      <workItem from="1575091919625" duration="11000" />
+      <workItem from="1575092252117" duration="749000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1559475840440</created>
@@ -141,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575084884289</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="取消 Firebase SDK">
+      <created>1575085416806</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575085416806</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +171,7 @@
     <MESSAGE value="添加 Google Analytics" />
     <MESSAGE value="fix google image url" />
     <MESSAGE value="更改谷歌镜像搜索引擎为YouCare搜索引擎" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改谷歌镜像搜索引擎为YouCare搜索引擎" />
+    <MESSAGE value="取消 Firebase SDK" />
+    <option name="LAST_COMMIT_MESSAGE" value="取消 Firebase SDK" />
   </component>
 </project>
