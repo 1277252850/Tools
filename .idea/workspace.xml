@@ -41,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,7 +76,8 @@
       <workItem from="1564191894677" duration="5115000" />
       <workItem from="1564220554921" duration="2000" />
       <workItem from="1571327764018" duration="191000" />
-      <workItem from="1572543449649" duration="306000" />
+      <workItem from="1572543449649" duration="497000" />
+      <workItem from="1575084493561" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1559475840440</created>
@@ -127,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563115065266</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix google image url">
+      <created>1572543880925</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572543880925</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +146,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -151,6 +161,7 @@
     <MESSAGE value="更新搜索引擎" />
     <MESSAGE value="添加 Firebase" />
     <MESSAGE value="添加 Google Analytics" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 Google Analytics" />
+    <MESSAGE value="fix google image url" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix google image url" />
   </component>
 </project>

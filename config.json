@@ -1,9 +1,9 @@
 {
   "searches": [
     {
-      "id": "google_search",
-      "name": "谷歌镜像",
-      "url": "https://fanqiang.yanke.info/search?q="
+      "id": "Youcare_search",
+      "name": "YouCare",
+      "url": "https://youcare.world/all?l=zh&q="
     },
     {
       "id": "baidu_search",
